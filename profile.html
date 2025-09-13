@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>My Profile Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .center {
+      text-align: center;
+      display : flex;
+      justify-content: center;
+      align-items: center;
+      margin:0;
+      padding: 50px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .full {
+      display: none;
+      max-width: 1000px;
+      margin: 30px auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .left {
+      width: 30%;
+      float: left;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .right {
+      width: 70%;
+      float: left;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .image img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    h2 {
+      margin-top: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+
+    /* Clearfix */
+    .full::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="center">
+    <a class="btn" onclick="document.querySelector('.full').style.display='block'">👉 Click Here to View My Portfolio</a>
+  </div>
+
+  <div class="full">
+    <div class="left">
+      <div class="image">
+        <img src="https://static.vecteezy.com/system/resources/previews/005/544/718/non_2x/profile-icon-design-free-vector.jpg">
+      </div>
+      <div class="Contact">
+        <h2>Contact</h2>
+        <p><b>Email id:</b> kiranmayi.kolli@sasi.ac.in</p>
+        <p><b>Mobile no:</b> 1234567890</p>
+      </div>
+      <div class="Skills">
+        <h2>Skills</h2>
+        <ul>
+          <li><b>Programming Languages:</b> Python, Java, C</li>
+          <li><b>Frontend:</b> HTML, CSS, React</li>
+          <li><b>Backend:</b> Node.js</li>
+        </ul>
+      </div>
+      <div class="Language">
+        <h2>Language</h2>
+        <ul>
+          <li>English</li>
+          <li>Telugu</li>
+        </ul>
+      </div>
+      <div class="Hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+          <li>Playing games</li>
+          <li>Listening to music</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="name">
+        <h1>K.Usha Kiranmayi</h1>
+      </div>
+      <div class="title">
+        <p>Web Developer</p>
+      </div>
+      <div class="Summary">
+        <h2>Summary</h2>
+        <p>To secure a challenging position in a reputable organization to expand my learning, knowledge, and skill.</p>
+      </div>
+      
+      <div class="Education">
+        <h2>Education</h2>
+        <table>
+          <tr>
+            <th>School & Colleges</th>
+            <th>Passing Year</th>
+            <th>Percentage/CGPA</th>
+          </tr>
+          <tr>
+            <td>Sasi Institute of Engineering and Technology</td>
+            <td>2027</td>
+            <td>8.0</td>
+          </tr>
+          <tr>
+            <td>Pragathi Junior College</td>
+            <td>2023</td>
+            <td>82%</td>
+          </tr>
+          <tr>
+            <td>Montessori E.M School</td>
+            <td>2021</td>
+            <td>10.0</td>
+          </tr>
+        </table>
+      </div>
+      <div class="project">
+        <ul>
+          <li>
+            <h2>Project 1</h2>
+            <p>This project is based on MERN technology - Canteen Management system</p>
+          </li>
+          <li>
+            <h2>Project 2</h2>
+            <p>This project is based on HTML and CSS - My Resume</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
